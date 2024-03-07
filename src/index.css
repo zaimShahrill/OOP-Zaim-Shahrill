@@ -1,0 +1,132 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Apply Poppins font to all text elements */
+body, input, button, h1, h2, p {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header styles */
+.header {
+  background-color: #008080; /* Dark cyan */
+  background-image: url('mountain-header.jpg'); /* Add your background image path here */
+  background-size: cover; /* Adjust background size as needed */
+  background-position: center; /* Center the background image */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Add relative positioning */
+  z-index: 1; /* Set a higher z-index to keep it above other elements */
+}
+
+
+.header h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+.header p {
+  margin: 10px 0 0;
+  font-size: 24px;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #004d4d; /* Darker cyan */
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: relative; /* Add relative positioning */
+  z-index: 1; /* Set a higher z-index to keep it above other elements */
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.navbar ul li a:hover {
+  color: #66c2c2; /* Light cyan */
+}
+
+/* Search section styles */
+.search-section {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.search-section input[type="text"] {
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #008080; /* Dark cyan */
+  border-radius: 5px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.search-section button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #008080; /* Dark cyan */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-section button:hover {
+  background-color: #66c2c2; /* Light cyan */
+}
+
+/* Country details styles */
+#countryData {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f900;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+  text-align: center; /* Center the content horizontally */
+}
+
+#countryData h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+#countryData p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+#countryData img {
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+

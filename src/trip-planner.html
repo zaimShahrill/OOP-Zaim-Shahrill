@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Planner</title>
+    <link rel="stylesheet" href="trip-planner.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Geoxplore</h1>
+        <p>Explore the World</p>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#trip">Planner</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+
+    <div class="container">
+        <div class="content">
+            <div id="create">
+                <h2>Add Country to Your Trip</h2>
+                <form id="addCountryForm">
+                    <label for="countryName">Country Name:</label>
+                    <input type="text" id="countryName" name="countryName" required>
+                    <button type="submit" onclick="addCountry()">Add</button>
+                </form>
+                <div id="addCountryFeedback" class="feedback"></div>
+            </div>
+
+            <div id="read">
+                <h2>Your Trip</h2>
+                <div id="tripList"></div>
+            </div>
+
+            <div id="checklist">
+                <h2>Your Trip Checklist</h2>
+                <ul id="checklistItems"></ul>
+            </div>
+
+            <div id="editCountrySection">
+                <h2>Edit Country in Your Trip</h2>
+                <form id="editCountryForm">
+                    <label for="oldCountryName">Old Country Name:</label>
+                    <input type="text" id="oldCountryName" name="oldCountryName" required>
+                    <label for="newCountryName">New Country Name:</label>
+                    <input type="text" id="newCountryName" name="newCountryName" required>
+                    <button type="submit" onclick="editCountry()">Edit</button>
+                </form>
+                <div id="editCountryFeedback" class="feedback"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="trip-planner.js"></script>
+</body>
+
+</html>
